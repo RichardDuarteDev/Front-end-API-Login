@@ -1,51 +1,41 @@
-# My Login App
+Meu App de Login
+Este projeto é uma aplicação web simples que permite que os usuários façam login usando nome de usuário e senha. Ele é composto por uma página de login e uma página de área de trabalho onde rotas adicionais de API podem ser adicionadas.
 
-This project is a simple web application that allows users to log in using their username and password. It consists of a login page and a workspace page where additional API routes can be added.
-
-## Project Structure
-
-```
+Estrutura do Projeto
+perl
+Copiar
+Editar
 my-login-app
 ├── src
-│   ├── index.html          # The login page
-│   ├── workspace.html      # The workspace page for additional API routes
+│   ├── index.html          # Página de login
+│   ├── workspace.html      # Página da área de trabalho para rotas adicionais da API
 │   ├── css
-│   │   └── styles.css      # CSS styles for the application
+│   │   └── styles.css      # Estilos CSS da aplicação
 │   └── js
-│       ├── login.js        # JavaScript for handling login functionality
-│       └── workspace.js     # JavaScript for the workspace page
-├── package.json            # Configuration file for npm
-└── README.md               # Documentation for the project
-```
+│       ├── login.js        # JavaScript responsável pela funcionalidade de login
+│       └── workspace.js    # JavaScript da página da área de trabalho
+├── package.json            # Arquivo de configuração do npm
+└── README.md               # Documentação do projeto
+Primeiros Passos
+Para executar esta aplicação, siga os passos abaixo:
 
-## Getting Started
+Clone o repositório:
 
-To run this application, follow these steps:
+bash
+Copiar
+Editar
+git clone <url-do-repositório>
+cd my-login-app
+Instale as dependências (se houver):
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd my-login-app
-   ```
+bash
+Copiar
+Editar
+npm install
+Abra a aplicação:
+Abra o arquivo src/index.html no seu navegador para acessar a página de login.
 
-2. **Install dependencies** (if any):
-   ```bash
-   npm install
-   ```
+Como Usar
+Página de Login: Digite seu nome de usuário e senha e clique no botão de envio para fazer login. A aplicação enviará uma requisição POST para https://localhost:7267/Usuario/login com as credenciais fornecidas.
 
-3. **Open the application**:
-   Open `src/index.html` in your web browser to access the login page.
-
-## Usage
-
-- **Login Page**: Enter your username and password, then click the submit button to log in. The application will send a POST request to `https://localhost:7267/Usuario/login` with the provided credentials.
-
-- **Workspace Page**: After logging in, you can navigate to `src/workspace.html` to access additional functionalities and API routes.
-
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Página da Área de Trabalho: Após fazer login, você pode navegar até src/workspace.html para acessar funcionalidades adicionais e rotas da API.
