@@ -1,10 +1,6 @@
 Meu App de Login
 Este projeto é uma aplicação web simples que permite que os usuários façam login usando nome de usuário e senha. Ele é composto por uma página de login e uma página de área de trabalho onde rotas adicionais de API podem ser adicionadas.
 
-Estrutura do Projeto
-perl
-Copiar
-Editar
 my-login-app
 ├── src
 │   ├── index.html          # Página de login
@@ -16,8 +12,8 @@ my-login-app
 │       └── workspace.js    # JavaScript da página da área de trabalho
 ├── package.json            # Arquivo de configuração do npm
 └── README.md               # Documentação do projeto
-Primeiros Passos
-Para executar esta aplicação, siga os passos abaixo:
+
+
 
 Clone o repositório:
 
