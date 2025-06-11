@@ -1,7 +1,10 @@
-Meu aplicativo de login
-Este projeto é uma aplicação web simples que permite aos usuários efetuar login usando seu nome de usuário e senha. Consiste em uma página de login e uma página de área de trabalho onde rotas de API adicionais podem ser adicionadas.
+# My Login App
 
-Estrutura do Projeto
+This project is a simple web application that allows users to log in using their username and password. It consists of a login page and a workspace page where additional API routes can be added.
+
+## Project Structure
+
+```
 my-login-app
 ├── src
 │   ├── index.html          # The login page
@@ -13,25 +16,36 @@ my-login-app
 │       └── workspace.js     # JavaScript for the workspace page
 ├── package.json            # Configuration file for npm
 └── README.md               # Documentation for the project
-Começando
-Para executar este aplicativo, siga estas etapas:
+```
 
-Clonar o repositório :
+## Getting Started
 
-git clone <repository-url>
-cd my-login-app
-Instalar dependências (se houver):
+To run this application, follow these steps:
 
-npm install
-Abra o aplicativo : Abra src/index.htmlno seu navegador para acessar a página de login.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd my-login-app
+   ```
 
-Uso
-Página de login : digite seu nome de usuário e senha e clique no botão Enviar para efetuar login. O aplicativo enviará uma solicitação POST https://localhost:7267/Usuario/logincom as credenciais fornecidas.
+2. **Install dependencies** (if any):
+   ```bash
+   npm install
+   ```
 
-Página do espaço de trabalho : após efetuar login, você pode navegar para src/workspace.htmlacessar funcionalidades adicionais e rotas de API.
+3. **Open the application**:
+   Open `src/index.html` in your web browser to access the login page.
 
-Contribuindo
-Se você quiser contribuir com este projeto, bifurque o repositório e envie um pull request com suas alterações.
+## Usage
 
-Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter detalhes.
+- **Login Page**: Enter your username and password, then click the submit button to log in. The application will send a POST request to `https://localhost:7267/Usuario/login` with the provided credentials.
+
+- **Workspace Page**: After logging in, you can navigate to `src/workspace.html` to access additional functionalities and API routes.
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
